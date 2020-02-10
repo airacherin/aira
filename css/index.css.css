@@ -1,0 +1,135 @@
+@font-face{
+    src: url(..//fonts/Sacramento/Sacramento-Regular.ttf);
+    font-family: Sacramento;
+}
+@font-face{
+    src: url(..//fonts/Montserrat/Montserrat-Regular.ttf);
+    font-family: Montserrat;
+}
+@font-face{
+    src: url(..//fonts/Merriweather/Merriweather-Regular.ttf);
+    font-family: Merriweather;
+}
+@keyframes top{
+    0%{
+        opacity: 0;
+        transform: translateX(95vh);
+    }
+    100%{
+        opacity: 1;
+        transform:  translateX(-95vw);
+    }
+}
+
+@keyframes cloudbot{
+    100%{
+        opacity: 0;
+        transform: translateX(-95vh);
+    }
+    0%{
+        opacity: 1;
+        transform:  translateX(95vw); rotate:(0);
+    }
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}   
+    .cloud-top{
+        position: absolute;
+        right: 20rem;
+        top: 2rem;
+        animation: top 15s infinite linear;
+        animation-direction: reverse
+    }
+    .cloud-bottom{
+        position: absolute;
+        left: 25rem;
+        top: 20rem;
+        animation: cloudbot 15s infinite linear;
+        
+    }
+html {
+    font-size: 62.5%;
+}
+
+.header-sub{
+    font-family: Montserrat;
+    font-size: 3rem;
+    color:wheat;
+}
+.header-title{
+    font-family: Sacramento;
+    font-size: 9rem;
+}
+body{
+    text-align: center;
+}
+.home-header {
+    background: teal;
+    height: 95vh;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5rem;
+    
+}
+.home-section-intro {
+    background: linear-gradient(to left pink, skyblue);
+    height:10vh;
+}
+.home-section-skills{
+    height: 95vh;
+    background: linear-gradient(to left pink, skyblue);
+}
+.home-footer{
+    height: 6vh;
+    background: powderblue;
+}
+
+.mountain{
+    position:relative ;
+    bottom: -5rem;
+    
+}
+.home-section-intro{
+    background: linear-gradient(to left,teal,powderblue,blue);
+    height: 10vh;
+    position: relative;
+    padding: 5rem;
+
+}
+.pic{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 100%;
+    background: cornflowerblue
+}
+.home-section-skills{
+    height: 95vh;
+    background:rgb(136, 193, 211);
+    position: relative;
+}
+.skills-article-container{
+    width:50%;
+    margin: auto;
+    overflow: hidden;
+    line-height: 3;
+}
+.home-footer{
+    height:6vh;
+    background: black;
+}
+#footer{
+    background: cornflowerblue;
+    padding: 2%;
+    size: 16px
+}
+#follow{
+    text-align: left;
+    font-size: 15px
+}
+#contact{
+    text-align: left;
+    font-size: 15px
+}
+
